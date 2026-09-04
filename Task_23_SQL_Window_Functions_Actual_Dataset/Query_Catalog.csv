@@ -1,0 +1,13 @@
+Query ID,Function(s),Analysis Area,Business Question
+Q01,ROW_NUMBER(),Order ranking,Unique sequence of orders by TotalDue
+Q02,RANK(),Order ranking,Rank orders with tied TotalDue values
+Q03,DENSE_RANK(),Order ranking,Rank orders without gaps after ties
+Q04,ROW_NUMBER / RANK / DENSE_RANK,Function comparison,Compare the three ranking behaviors
+Q05,ROW_NUMBER + PARTITION BY,Customer analysis,Number each customer's orders chronologically
+Q06,RANK(),Customer sales,Rank customers by total sales
+Q07,DENSE_RANK + PARTITION BY,Country analysis,Find top 3 orders in each country
+Q08,LAG(),Monthly trend,Compare monthly sales with previous month
+Q09,LAG + PARTITION BY,Customer trend,Compare an order with the customer's previous order
+Q10,LEAD(),Monthly trend,Compare monthly sales with next month
+Q11,RANK(),Country sales,Rank countries by total sales
+Q12,RANK + LAG,Combined analysis,Rank months and compare with previous month
